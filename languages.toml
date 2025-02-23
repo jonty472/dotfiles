@@ -1,0 +1,13 @@
+[[language]]
+name = "c-sharp"
+language-id = "csharp"
+scope = "source.cs"
+inbjection-regex = "c-?sharp"
+roots = ["sln", "csproj"]
+file-types = ["cs"]
+comment-token = "//"
+language-servers = [ { name = "c-sharp" } ]
+
+[language-server.c-sharp]
+command = "OmniSharp"
+args = [ "-lsp", "timeout=10000" ]
